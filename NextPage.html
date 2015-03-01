@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Next Page</title>
+    <link rel="stylesheet" type="text/css" href="waves.min.css">
+    <style type="text/css">
+    .container {
+        width: 300px;
+        height: 500px;
+        border: 1px solid #EEEEEE;
+        margin: 100px auto;
+        overflow: hidden;
+    }
+    .section {
+        width: 300px;
+        height: 500px;
+        overflow: hidden;
+    }
+    .section-1 {
+        background-color: #6699CC;
+    }
+    .section-2 {
+        background-color: #6666CC;
+    }
+    .section-3 {
+        background-color: #6633CC;
+    }
+    .section-4 {
+        background-color: #663399;
+    }
+    .section-5 {
+        background-color: #666699;
+    }
+    .btn-next {
+        margin-top: 400px;
+        margin-left: 115px;
+        width: 70px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section section-1">
+            <!-- <i class="waves-effect waves-circle waves-light" style="background: #d54f38;color:#fff;"></i> -->
+            <button class="btn-next waves-effect waves-button waves-light waves-float" style="background: #1bb556;color: #fff;">
+                Next
+            </button>
+        </div>
+
+        <div class="section section-2">
+            <button class="btn-next waves-effect waves-button waves-light waves-float" style="background: #1bb556;color: #fff;">
+                Next
+            </button>
+        </div>
+
+        <div class="section section-3">
+            <button class="btn-next waves-effect waves-button waves-light waves-float" style="background: #1bb556;color: #fff;">
+                Next
+            </button>
+        </div>
+
+        <div class="section section-4">
+            <button class="btn-next waves-effect waves-button waves-light waves-float" style="background: #1bb556;color: #fff;">
+                Next
+            </button>
+        </div>
+
+        <div class="section section-5">
+            <button class="btn-next waves-effect waves-button waves-light waves-float" style="background: #1bb556;color: #fff;" disabled="">
+                Next
+            </button>
+        </div>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="waves.min.js"></script>
+    <script type="text/javascript">
+    Waves.displayEffect();
+
+    $(function () {
+        $('.btn-next').on('click', function () {
+            $(this).parent().animate({'height': '0'});
+        })
+    })
+    </script>
+</body>
+
+</html>
